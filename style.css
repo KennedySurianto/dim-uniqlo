@@ -35,8 +35,8 @@ body {
 /* Store Map Layout */
 .store-map {
     position: relative;
-    width: 100%;
-    height: 100%;
+    width: 90%;
+    height: 90%;
     background-color: #e0e0e0;
     border: 2px solid #ccc;
     display: grid;
