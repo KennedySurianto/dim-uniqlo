@@ -1,15 +1,15 @@
-export let products = {
+export const products = {
     PR001: {
         name: 'Men’s Ultra Stretch Jeans',
-        size: 'M', // Example size, replace as needed
-        color: 'Black', // Example color, replace as needed
+        size: 'M',
+        color: 'Black',
         category: 'Clothing',
         stock: 100,
         price: 39.90
     },
     PR002: {
         name: 'Women’s BlockTech Parka',
-        size: 'M',
+        size: 'L',
         color: 'Black',
         category: 'Clothing',
         stock: 50,
@@ -17,7 +17,7 @@ export let products = {
     },
     PR003: {
         name: 'Men’s Smart Ankle Pants',
-        size: 'M',
+        size: 'S',
         color: 'Black',
         category: 'Clothing',
         stock: 80,
@@ -33,7 +33,7 @@ export let products = {
     },
     PR005: {
         name: 'Men’s BlockTech Coat',
-        size: 'M',
+        size: 'XL',
         color: 'Black',
         category: 'Clothing',
         stock: 60,
@@ -41,7 +41,7 @@ export let products = {
     },
     PR006: {
         name: 'Women’s Ribbed Knit Sweater',
-        size: 'M',
+        size: 'L',
         color: 'Gray',
         category: 'Clothing',
         stock: 90,
@@ -49,7 +49,7 @@ export let products = {
     },
     PR007: {
         name: 'Men’s Sweatpants',
-        size: 'M',
+        size: 'S',
         color: 'Gray',
         category: 'Clothing',
         stock: 70,
@@ -65,7 +65,7 @@ export let products = {
     },
     PR009: {
         name: 'Men’s HeatTech T-Shirt',
-        size: 'M',
+        size: 'L',
         color: 'White',
         category: 'Clothing',
         stock: 150,
@@ -73,7 +73,7 @@ export let products = {
     },
     PR010: {
         name: 'Women’s Ultra Light Down Jacket',
-        size: 'M',
+        size: 'XL',
         color: 'Black',
         category: 'Clothing',
         stock: 80,
@@ -81,7 +81,7 @@ export let products = {
     },
     PR011: {
         name: 'Men’s Extra Fine Merino Wool Sweater',
-        size: 'M',
+        size: 'S',
         color: 'Black',
         category: 'Clothing',
         stock: 60,
@@ -97,7 +97,7 @@ export let products = {
     },
     PR013: {
         name: 'Men’s Smart Casual Shirt',
-        size: 'M',
+        size: 'L',
         color: 'White',
         category: 'Clothing',
         stock: 110,
@@ -105,7 +105,7 @@ export let products = {
     },
     PR014: {
         name: 'Women’s BlockTech Jacket',
-        size: 'M',
+        size: 'S',
         color: 'Black',
         category: 'Clothing',
         stock: 50,
@@ -121,7 +121,7 @@ export let products = {
     },
     PR016: {
         name: 'Women’s Warm Padded Jacket',
-        size: 'M',
+        size: 'L',
         color: 'Black',
         category: 'Clothing',
         stock: 60,
@@ -137,7 +137,7 @@ export let products = {
     },
     PR018: {
         name: 'Women’s Wool Blend Coat',
-        size: 'M',
+        size: 'XL',
         color: 'Gray',
         category: 'Clothing',
         stock: 40,
@@ -153,7 +153,7 @@ export let products = {
     },
     PR020: {
         name: 'Women’s Linen Blend Shirt',
-        size: 'M',
+        size: 'S',
         color: 'White',
         category: 'Clothing',
         stock: 130,
