@@ -32,6 +32,10 @@
                 <button class="nav-link" id="predictive-sales-tab" data-bs-toggle="tab" data-bs-target="#predictiveSales" type="button"
                     role="tab">Predictive Sales</button>
             </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="demand-prediction-tab" data-bs-toggle="tab" data-bs-target="#demandPrediction"
+                    type="button" role="tab">Demand Prediction</button>
+            </li>
         </ul>
 
         <div class="tab-content" id="dashboardTabContent">
@@ -276,6 +280,28 @@
                     </div>
                 </div>
             </div>
+
+            <!-- Demand Prediction Tab Content -->
+            <div class="tab-content">
+                <div class="tab-pane fade" id="demandPrediction" role="tabpanel">
+                    <!-- Store Map and Footstep Heatmap Content -->
+                    <div class="store-container">
+                        <!-- Store Layout -->
+                        <div class="store-map">
+                            <!-- Sections of the Store -->
+                            <div class="section" id="sectionA">Clothing A</div>
+                            <div class="section" id="sectionB">Clothing B</div>
+                            <div class="section" id="sectionC">Clothing C</div>
+                            <div class="section" id="sectionD">Clothing D</div>
+            
+                            <!-- Aisles and Footsteps -->
+                            <div class="footstep-heatmap">
+                                <!-- Footstep Locations will be dynamically added here -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
@@ -284,6 +310,7 @@
     <script type="module" src="manageOrders.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script type="module" src="predictiveSales.js"></script>
+    <script type="module" src="demandPrediction.js"></script>
 </body>
 
 </html>

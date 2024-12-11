@@ -1,3 +1,10 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     background-color: #f8f9fa;
 }
@@ -13,4 +20,73 @@ body {
 .table th,
 .table td {
     vertical-align: middle;
+}
+
+/* Store Container */
+.store-container {
+    width: 100%;
+    height: 30rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f4f4f4;
+}
+
+/* Store Map Layout */
+.store-map {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: #e0e0e0;
+    border: 2px solid #ccc;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 10px;
+    position: relative;
+}
+
+/* Store Sections */
+.section {
+    background-color: #fff;
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: center;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+/* Footstep Heatmap */
+.footstep-heatmap {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    /* To make sure it's just for visualization */
+}
+
+.footstep {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: rgba(255, 0, 0, 0.5);
+    animation: expandFootstep 2s infinite ease-in-out;
+}
+
+@keyframes expandFootstep {
+    0% {
+        transform: scale(0);
+        opacity: 1;
+    }
+
+    100% {
+        transform: scale(3);
+        opacity: 0;
+    }
 }

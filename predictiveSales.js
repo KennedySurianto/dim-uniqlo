@@ -54,7 +54,7 @@ function updatePredictiveSales(predictor = 'linear', daysAhead = 7) {
         Predicted Total Sales (Next ${daysAhead} Days): $${totalPredictedSales.toFixed(2)}<br>
         Predicted Average Daily Sales: $${averagePredictedSales.toFixed(2)}
     `;
-    salesForecastHeading.innerText = `Sales Forecast (Next ${daysAhead} Days)`
+    salesForecastHeading.innerText = `Sales Forecast (Next ${daysAhead} Days)`;
 
     // If a chart already exists, destroy it before creating a new one
     if (salesChart) {
