@@ -11,8 +11,8 @@ function populateProductsTable() {
     row.innerHTML = `
             <td>${productId}</td>
             <td>${productData.name}</td>
-            <td>${productData.size}</td>
-            <td>${productData.color}</td>
+            <td>${productData.size.join(', ')}</td>
+            <td>${productData.color.join(', ') }</td>
             <td>${productData.category}</td>
             <td>${productData.stock}</td>
             <td>${productData.price.toFixed(2)}</td>

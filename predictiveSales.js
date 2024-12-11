@@ -2,6 +2,7 @@
 const historicalSalesData = [
     50, 60, 55, 65, 70, 75, 80, 85, 90, 95, 100, 110, 120, 130, 140, 135, 125, 150, 160, 165, 170, 180, 185, 190, 200, 210, 220, 230, 240, 250
 ];
+let salesChart = null;
 
 // Basic linear regression model (simple increasing trend based on average of last few days)
 function predictSalesLinear(daysAhead = 7) {
@@ -36,6 +37,7 @@ function predictSalesExponentialSmoothing(daysAhead = 7, alpha = 0.2) {
 // Update the sales summary and graph
 function updatePredictiveSales(predictor = 'linear', daysAhead = 7) {
     let predictedSales = [];
+    const salesForecastHeading = document.getElementById('salesForecastHeading');
 
     // Predict sales based on the selected predictor model
     if (predictor === 'linear') {
@@ -52,10 +54,16 @@ function updatePredictiveSales(predictor = 'linear', daysAhead = 7) {
         Predicted Total Sales (Next ${daysAhead} Days): $${totalPredictedSales.toFixed(2)}<br>
         Predicted Average Daily Sales: $${averagePredictedSales.toFixed(2)}
     `;
+    salesForecastHeading.innerText = `Sales Forecast (Next ${daysAhead} Days)`
+
+    // If a chart already exists, destroy it before creating a new one
+    if (salesChart) {
+        salesChart.destroy();
+    }
 
     // Update the sales chart
     const ctx = document.getElementById('salesForecastChart').getContext('2d');
-    const salesChart = new Chart(ctx, {
+    salesChart = new Chart(ctx, {
         type: 'line',
         data: {
             labels: Array.from({ length: daysAhead }, (_, i) => `Day ${i + 1}`),
